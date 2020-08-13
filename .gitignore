@@ -1,4 +1,7 @@
+# Jupyter Notebook
+.ipynb_checkpoints
 
+    
 *.swp
 # Directory of ideas in Jupyter Notebook
 # Byte-compiled / optimized / DLL files
