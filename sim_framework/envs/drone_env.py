@@ -40,7 +40,9 @@ class DroneEnv(object):
             else:
 
                 SCENE_FILE = join(dirname(abspath(__file__))) + '/../../scenes/ardrone_modeled_headless.ttt' ## FIX
-        
+        else:
+                SCENE_FILE = join(dirname(abspath(__file__))) + SCENE_FILE
+
         assert state in ['Normal', 'New_Double', 'New_action']
         assert random in [False, 'Gaussian', 'Uniform','Discretized_Uniform'], \
                     "random should be one of these values [False, 'Gaussian', 'Uniform', 'Discretized_Uniform]"
